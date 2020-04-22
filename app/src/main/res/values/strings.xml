@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WoWSky</string>
+    <string name="edit_text_hint">输入地址</string>
 </resources>
