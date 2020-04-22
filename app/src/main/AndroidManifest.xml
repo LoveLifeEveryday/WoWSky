@@ -4,6 +4,7 @@
     package="com.users.xucanyou666.wowsky">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".WoWSkyApplication"
         android:allowBackup="true"
@@ -13,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".ui.weather.WeatherActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

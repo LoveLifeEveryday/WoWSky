@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">WoWSky</string>
     <string name="edit_text_hint">输入地址</string>
+    <string name="separator">|</string>
+    <string name="forecast">预报</string>
+    <string name="index_of_living">生活指数</string>
+    <string name="influenza">感冒</string>
+    <string name="dressing">穿衣</string>
+    <string name="ultraviolet">实时紫外线</string>
+    <string name="car_washing">洗车</string>
+
 </resources>
