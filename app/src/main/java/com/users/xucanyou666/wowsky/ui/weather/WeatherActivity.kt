@@ -63,7 +63,7 @@ class WeatherActivity : AppCompatActivity() {
         swipeRefresh.setOnRefreshListener {
             refreshWeather()
         }
-        navBtn.setOnClickListener {
+        navTv.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
         }
         drawerLayout.addDrawerListener(object : DrawerLayout.DrawerListener {

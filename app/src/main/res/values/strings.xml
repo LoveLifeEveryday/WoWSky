@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WoWSky</string>
+    <string name="app_name">WoW天气</string>
     <string name="edit_text_hint">输入地址</string>
     <string name="separator">|</string>
     <string name="forecast">预报</string>
