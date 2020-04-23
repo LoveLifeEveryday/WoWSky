@@ -1,7 +1,7 @@
-package com.sunnyweather.android.logic.network
+package com.users.xucanyou666.wowsky.logic.network
 
-import com.sunnyweather.android.logic.model.DailyResponse
-import com.sunnyweather.android.logic.model.RealtimeResponse
+import com.users.xucanyou666.wowsky.logic.model.DailyResponse
+import com.users.xucanyou666.wowsky.logic.model.RealtimeResponse
 import com.users.xucanyou666.wowsky.WoWSkyApplication
 import retrofit2.Call
 import retrofit2.http.GET

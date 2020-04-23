@@ -1,6 +1,5 @@
 package com.users.xucanyou666.wowsky.ui.place
 
-import android.app.DownloadManager
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel

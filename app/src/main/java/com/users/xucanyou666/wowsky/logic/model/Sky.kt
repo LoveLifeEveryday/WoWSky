@@ -1,4 +1,4 @@
-package com.sunnyweather.android.logic.model
+package com.users.xucanyou666.wowsky.logic.model
 
 
 import com.users.xucanyou666.wowsky.R

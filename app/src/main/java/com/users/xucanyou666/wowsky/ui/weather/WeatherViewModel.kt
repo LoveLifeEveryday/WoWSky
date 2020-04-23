@@ -1,4 +1,4 @@
-package com.sunnyweather.android.ui.weather
+package com.users.xucanyou666.wowsky.ui.weather
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations

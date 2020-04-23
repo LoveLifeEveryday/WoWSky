@@ -1,6 +1,5 @@
 package com.users.xucanyou666.wowsky.logic.network
 
-import com.sunnyweather.android.logic.network.WeatherService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

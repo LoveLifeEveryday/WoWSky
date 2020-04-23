@@ -15,9 +15,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.sunnyweather.android.logic.model.Weather
-import com.sunnyweather.android.logic.model.getSky
-import com.sunnyweather.android.ui.weather.WeatherViewModel
+import com.users.xucanyou666.wowsky.logic.model.Weather
+import com.users.xucanyou666.wowsky.logic.model.getSky
 import com.users.xucanyou666.wowsky.R
 import kotlinx.android.synthetic.main.activity_weather.*
 import kotlinx.android.synthetic.main.forecast.*

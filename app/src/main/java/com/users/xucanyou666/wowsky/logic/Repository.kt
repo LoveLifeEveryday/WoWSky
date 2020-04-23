@@ -1,8 +1,8 @@
 package com.users.xucanyou666.wowsky.logic
 
 import androidx.lifecycle.liveData
-import com.sunnyweather.android.logic.dao.PlaceDao
-import com.sunnyweather.android.logic.model.Weather
+import com.users.xucanyou666.wowsky.logic.dao.PlaceDao
+import com.users.xucanyou666.wowsky.logic.model.Weather
 import com.users.xucanyou666.wowsky.logic.model.Place
 import com.users.xucanyou666.wowsky.logic.network.SunnyWeatherNetwork
 import kotlinx.coroutines.Dispatchers
