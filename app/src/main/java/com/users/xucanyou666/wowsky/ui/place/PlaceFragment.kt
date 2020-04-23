@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -49,17 +48,7 @@ class PlaceFragment : Fragment() {
         recyclerView.layoutManager = layoutManager
         adapter = PlaceAdapter(this, viewModel.placeList)
         recyclerView.adapter = adapter
-        searchPlaceEdit.addTextChangedListener { editable ->
-            val content = editable.toString()
-            if (content.isNotEmpty()) {
-                viewModel.searchPlaces(content)
-            } else {
-                recyclerView.visibility = View.GONE
-                bgImageView.visibility = View.VISIBLE
-                viewModel.placeList.clear()
-                adapter.notifyDataSetChanged()
-            }
-        }
+        searchPlaceEdit.addTextChangedListener(PlaceTextWatcher(viewModel, recyclerView, adapter))
         viewModel.placeLiveData.observe(this, Observer { result ->
             val places = result.getOrNull()
             if (places != null) {
