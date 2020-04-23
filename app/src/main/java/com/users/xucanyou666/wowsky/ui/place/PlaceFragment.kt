@@ -1,6 +1,5 @@
 package com.users.xucanyou666.wowsky.ui.place
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +13,7 @@ import com.users.xucanyou666.wowsky.MainActivity
 import com.users.xucanyou666.wowsky.R
 import com.users.xucanyou666.wowsky.ui.weather.WeatherActivity
 import com.users.xucanyou666.wowsky.util.showToast
+import com.users.xucanyou666.wowsky.util.startActivity
 import kotlinx.android.synthetic.main.fragment_place.*
 
 
@@ -37,12 +37,11 @@ class PlaceFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         if (activity is MainActivity && viewModel.isPlaceSaved()) {
             val place = viewModel.getSavedPlace()
-            val intent = Intent(context, WeatherActivity::class.java).apply {
+            startActivity<WeatherActivity>(context) {
                 putExtra("location_lng", place.location.lng)
                 putExtra("location_lat", place.location.lat)
                 putExtra("place_name", place.name)
             }
-            startActivity(intent)
             activity?.finish()
             return
         }
